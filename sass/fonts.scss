@@ -1,0 +1,27 @@
+@font-face {
+    font-family: "Glacial-Bold";
+    src: url('../fonts/GlacialIndifference-Bold.woff') format('woff');
+}
+@font-face {
+    font-family: "Glacial-Regular";
+    src: url('../fonts/GlacialIndifference-Regular.woff') format('woff');
+    font-weight: 100;
+}
+@font-face {
+    font-family: "Glacial-Italic";
+    src: url('../fonts/GlacialIndifference-Italic.woff') format('woff');
+}
+
+$bold: "Glacial-Bold";
+$regular: "Glacial-Regular";
+$italic: "Glacial-Italic";
+
+.bold{
+    font-family: "Glacial-Bold";
+}
+.regular{
+    font-family: "Glacial-Regular";
+}
+.italic{
+    font-family: "Glacial-Italic";
+}
