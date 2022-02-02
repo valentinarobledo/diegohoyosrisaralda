@@ -1,0 +1,7 @@
+@mixin bg($height) {
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+    position: relative;
+    height: $height;
+}
