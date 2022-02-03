@@ -6,3 +6,8 @@ var swiper = new Swiper(".mySwiper", {
       prevEl: ".swiper-button-prev",
     },
 });
+
+$('.menu-logo').on("click", function(){
+  $('.side-menu').toggle()
+  console.log('clic');
+})

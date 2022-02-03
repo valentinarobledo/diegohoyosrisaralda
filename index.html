@@ -18,14 +18,30 @@
     <title>Diego Hoyos 102</title>
 </head>
 <body>
-    <div class="menu py-2 px-5 d-flex justify-content-end align-items-center">
-        <ul class="d-flex mb-0">
-            <li class="mx-3"><a class="color-morado bold" href="/">Inicio</a></li>
-            <li class="mx-3"><a class="color-morado bold" href="/trayectoria.html">Trayectoria</a></li>
-            <li class="mx-3"><a class="color-morado bold" href="/colaboradores">Colaboradores</a></li>
-        </ul>
-        <img class="logo mx-3" src="/img/favicon.png" alt="logo">
-        <img class="logo-2 mx-3" src="/img/numero.png" alt="numero">
+    <div class="only-desk">
+        <div class="menu py-2 px-5 d-flex justify-content-end align-items-center">
+            <ul class="d-flex mb-0">
+                <li class="mx-3"><a class="color-morado bold" href="/">Inicio</a></li>
+                <li class="mx-3"><a class="color-morado bold" href="/trayectoria.html">Trayectoria</a></li>
+                <li class="mx-3"><a class="color-morado bold" href="/colaboradores">Colaboradores</a></li>
+            </ul>
+            <img class="logo mx-3" src="/img/favicon.png" alt="logo">
+            <img class="logo-2 mx-3" src="/img/numero.png" alt="numero">
+        </div>
+    </div>
+    <div class="only-mobile">
+        <div class="menu py-2 px-3 d-flex justify-content-between align-items-center">
+            <img class="menu-logo" src="./img/menu.png" alt="menu">
+            <img class="logo" src="/img/favicon.png" alt="logo">
+            <img class="logo-2" src="/img/numero.png" alt="numero">     
+        </div>
+        <div class="side-menu">
+            <ul class="mb-0">
+                <li class="my-3"><a class="color-morado bold" href="/">Inicio</a></li>
+                <li class="my-3"><a class="color-morado bold" href="/trayectoria.html">Trayectoria</a></li>
+                <li class="my-3"><a class="color-morado bold" href="/colaboradores">Colaboradores</a></li>
+            </ul>
+        </div>
     </div>
     <header class="header">
     </header>
@@ -79,7 +95,7 @@
                     <div class="swiper-button-next color-morado"></div>
                     <div class="swiper-button-prev color-morado"></div>
                   </div>
-                  <div class="d-flex justify-content-center align-items-center mb-5">
+                  <div class="d-flex flex-wrap justify-content-center align-items-center mb-5">
                     <button class="contenido-btn btn rounded-pill m-3 px-5">Cultura</button>
                     <button class="contenido-btn btn rounded-pill m-3 px-5">Campo</button>
                     <button class="contenido-btn btn rounded-pill m-3 px-5">Vida</button>
@@ -104,10 +120,10 @@
                 <div class="col-12 px-0">
                     <div class="container">
                         <div class="row py-4">
-                            <div class="col-md-4 d-flex align-items-center" data-aos="fade-right">
+                            <div class="col-md-4 d-flex align-items-center">
                                 <div><img class="img-perfil" src="./img/perfil.jpg" alt="img-presentacion"></div>
                             </div>
-                            <div class="col-md-8 d-flex align-items-center" data-aos="fade-left">
+                            <div class="col-md-8 d-flex align-items-center">
                                 <div class="presentacion-texto">
                                     <h2 class="mb-5">
                                         <span class="second color-amarillo">¿Quién es <span class="italic">Diego Hoyos?</span> </span>
@@ -143,7 +159,6 @@
                 </div>
                 <div class="col-md-5">
                     <div class="contenedor-descargas">
-                        <div class="circle"></div>
                         <img class="descarga" src="/img/descargas.jpg" alt="img-descargas">
                     </div>
                 </div>
@@ -159,17 +174,31 @@
         <h2 class="text-center">
             <span class="second color-amarillo">¿Como votar este 13 de marzo?</span>
         </h2>
-        <p class="text-center">
-            En la consulta del pacto vota por:
-        </p>
-        <div class="text-center">
-            <img src="/img/francia.jpeg" alt="">
+       <!--<div class="text-left py-3">
+            <img src="./img/camara.png" alt="">
         </div>
-        <div class="d-flex align-items-center justify-conent-center w-100">
-            <img data-aos="fade-right" src="./img/camara-grande.png" alt="camara">
-            <img data-aos="fade-left" src="./img/pacto-grande.png" alt="senado">
-            
+        <div class="text-left py-3">
+            <img src="./img/senado.png" alt="">
         </div>
+        <div class="text-left py-3">
+            <img src="./img/consulta-francia.png" alt="">
+        </div>--> 
+        <div class="row">
+            <div class="col-md-6">
+                <div class="text-center">
+                    <img class="congreso" src="/img/camara-grande.png" alt="camara">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="text-center">
+                    <img class="congreso" src="./img/pacto-grande.png" alt="senado">
+                </div>
+            </div>
+        </div>
+        <div class="text-center py-5">
+            <img class="consulta" src="./img/consulta-francia.png" alt="consulta">
+        </div>
+        
         
     </div>
    </section>

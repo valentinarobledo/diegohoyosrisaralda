@@ -24,6 +24,8 @@ body{
     padding: 0rem;
     box-sizing: border-box;
     overflow-x: hidden;
+    overflow-y: auto;
+    height: 100%;
 }
 
 h2{
@@ -98,52 +100,6 @@ a{
     }
 }
 
-.logo-box{
-    position: absolute;
-    top: 4rem;
-    left: 4rem;
-}
-
-.logo{
-    height: 3.5rem;
-}
-
-.text-box{
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
-
-.heading-primary{
-    color: $morado;
-    text-transform: uppercase;
-
-    backface-visibility: hidden;
-    margin-bottom: 2.5rem;
-
-}
-
-.heading-primary-main{
-    display: block;
-    font-size: 4rem;
-    font-weight: 400;
-    letter-spacing: 1rem;
-
-    animation-name: moveInLeft;
-    animation-duration: 1s;
-    animation-timing-function: ease-out;
-}
-
-.heading-primary-sub{
-    display: block;
-    font-size: 2rem;
-    font-weight: 700;
-    letter-spacing: 1.58remx;
-    animation: moveInRight 1s ease-out;
-}
-
 
 .btn:link,
 .btn:visited {
@@ -209,6 +165,7 @@ a{
     width: 100%;
     border-radius: 50%;
 }
+
 .presentacion{
     background-position: top;
     background-size: cover;
@@ -387,10 +344,13 @@ a{
       }
   }
   .votacion{
-      img{
-          width: 25rem;
-          margin: 5rem;
-      }
+     .consulta{
+        height: 9.7vw;
+        margin: 0 auto;
+     }
+     .congreso{
+         height: 20vw;
+     }
   }
   .contacto{
     z-index: 1000;
@@ -406,3 +366,5 @@ a{
 
   }
   @import "./keyframes.scss";
+
+  @import "./breakpoint_mobile.scss";

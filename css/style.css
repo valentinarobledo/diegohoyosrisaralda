@@ -54,7 +54,9 @@ body {
   color: #787878;
   padding: 0rem;
   box-sizing: border-box;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: 100%; }
 
 h2 .first {
   font-size: 3.2rem;
@@ -111,43 +113,6 @@ a {
   position: relative; }
   .header img {
     width: 8rem; }
-
-.logo-box {
-  position: absolute;
-  top: 4rem;
-  left: 4rem; }
-
-.logo {
-  height: 3.5rem; }
-
-.text-box {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center; }
-
-.heading-primary {
-  color: #5B4595;
-  text-transform: uppercase;
-  backface-visibility: hidden;
-  margin-bottom: 2.5rem; }
-
-.heading-primary-main {
-  display: block;
-  font-size: 4rem;
-  font-weight: 400;
-  letter-spacing: 1rem;
-  animation-name: moveInLeft;
-  animation-duration: 1s;
-  animation-timing-function: ease-out; }
-
-.heading-primary-sub {
-  display: block;
-  font-size: 2rem;
-  font-weight: 700;
-  letter-spacing: 1.58remx;
-  animation: moveInRight 1s ease-out; }
 
 .btn:link,
 .btn:visited {
@@ -354,9 +319,12 @@ a {
   .barra img {
     height: 6rem; }
 
-.votacion img {
-  width: 25rem;
-  margin: 5rem; }
+.votacion .consulta {
+  height: 9.7vw;
+  margin: 0 auto; }
+
+.votacion .congreso {
+  height: 20vw; }
 
 .contacto {
   z-index: 1000; }
@@ -395,3 +363,58 @@ a {
   100% {
     opacity: 1;
     transform: translateY(0); } }
+
+@media (max-width: 575.98px) {
+  .only-desk {
+    display: none; }
+  .only-mobile {
+    display: block; }
+  h2 .second {
+    font-size: 3.5rem; }
+  .menu .menu-logo {
+    width: auto; }
+  .side-menu {
+    display: none;
+    position: fixed;
+    top: 10%;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 1000;
+    height: 100%; }
+    .side-menu ul {
+      text-align: center;
+      padding: 0; }
+      .side-menu ul li a {
+        font-size: 1.8rem; }
+  .header {
+    background-image: url("../img/banner-mobile.png"); }
+  .pactos {
+    height: auto; }
+  .presentacion {
+    height: auto; }
+  .descargas {
+    height: auto; }
+    .descargas h5 {
+      padding-right: 0; }
+    .descargas .contenido-btn {
+      background-color: #FFD500;
+      color: #5B4595;
+      font-weight: 900;
+      font-size: 1rem; }
+    .descargas .contenedor-descargas {
+      padding-bottom: 3rem; }
+      .descargas .contenedor-descargas .descarga {
+        width: 80vw;
+        height: 80vw; }
+  .votacion .consulta {
+    height: 20vw; }
+  .votacion .congreso {
+    height: 50vw; } }
+
+/* @media (max-width: 767.98px) { ... } */
+@media (min-width: 991.98px) {
+  .only-desk {
+    display: block; }
+  .only-mobile {
+    display: none; } }

@@ -1,0 +1,93 @@
+@media (max-width: 575.98px) {
+    .only-desk{
+        display: none;
+    }
+    .only-mobile{
+        display: block;
+    }
+    h2{
+        .second{
+            font-size: 3.5rem;
+        }
+    }
+    .menu{
+
+        .menu-logo{
+          width: auto;  
+        }
+    }
+    .side-menu{
+        display: none;
+        position: fixed;
+        top: 10%;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        z-index: 1000;
+        height: 100%;
+        ul{
+            text-align: center;
+            padding: 0;
+            li{
+                a{
+                    font-size: 1.8rem;
+                }
+            }
+        }
+    }
+    .header{
+        background-image:  url('../img/banner-mobile.png');
+    }
+
+    .pactos{
+        height: auto;
+      }
+
+    .presentacion{
+        height: auto;
+    }
+
+    .descargas{
+        height: auto;
+          h5{
+              padding-right: 0;
+          }
+      .contenido-btn{
+              background-color: $amarillo;
+              color: $morado;
+              font-weight: 900;
+              font-size: 1rem;
+          }
+  
+          .contenedor-descargas{
+              padding-bottom: 3rem;
+              .descarga{
+                  width: 80vw;
+                  height: 80vw;
+              }
+          }
+  
+    }
+
+    .votacion{
+        .consulta{
+           height: 20vw;
+        }
+        .congreso{
+            height: 50vw;
+        }
+     }
+ }
+
+// Small devices (landscape phones, less than 768px)
+/* @media (max-width: 767.98px) { ... } */
+
+// Medium devices (tablets, less than 992px)
+@media (min-width: 991.98px) {
+    .only-desk{
+        display: block;
+    }
+    .only-mobile{
+        display: none;
+    }
+}
