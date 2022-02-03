@@ -169,7 +169,8 @@ a{
 .presentacion{
     background-position: top;
     background-size: cover;
-    height: 100vh;
+    height: auto;
+    padding: 3rem 0;
     display: flex;
     align-items: center;
     .presentacion-texto{
@@ -309,7 +310,7 @@ a{
     background-color: white;
     background-position: top;
     background-size: cover;
-    height: 110vh;
+    height: auto;
     .contenido-btn{
         background-color: $morado;
         color: $amarillo;
