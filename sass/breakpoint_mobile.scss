@@ -6,8 +6,11 @@
         display: block;
     }
     h2{
+        .first{
+            font-size: 2.8rem;
+        }
         .second{
-            font-size: 3.5rem;
+            font-size: 2.8rem;
         }
     }
     .menu{
@@ -48,6 +51,11 @@
     }
 
     .descargas{
+        h2{
+            .second{
+                font-size: 2.8rem;
+            }
+        }
         height: auto;
           h5{
               padding-right: 0;
@@ -68,15 +76,12 @@
           }
   
     }
+    .donaciones{
+        p{
+            padding: 0 1rem;
+        }
+    }
 
-    .votacion{
-        .consulta{
-           height: 20vw;
-        }
-        .congreso{
-            height: 50vw;
-        }
-     }
  }
 
 // Small devices (landscape phones, less than 768px)
