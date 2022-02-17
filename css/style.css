@@ -106,7 +106,7 @@ a {
 .header {
   margin-top: 5rem;
   height: 110vh;
-  background-image: url("../img/banner.png");
+  background-image: url("../img/banner-2.png");
   background-size: cover;
   background-position: top;
   background-attachment: fixed;
@@ -235,7 +235,7 @@ a {
   background-attachment: fixed;
   position: relative;
   height: 100vh;
-  background-image: url("../img/trayectoria.jpeg"); }
+  background-image: url("../img/banner3.png"); }
 
 .redes li a {
   position: relative;
